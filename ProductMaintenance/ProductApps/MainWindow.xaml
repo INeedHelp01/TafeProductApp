@@ -3,6 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Label Content="Product:" HorizontalAlignment="Left" Height="30" Margin="46,37,0,0" VerticalAlignment="Top" Width="61"/>
         <Label Content="Price $:" HorizontalAlignment="Left" Height="30" Margin="46,78,0,0" VerticalAlignment="Top" Width="61"/>
         <Label Content="Quantity:" HorizontalAlignment="Left" Height="30" Margin="48,113,0,0" VerticalAlignment="Top" Width="69" RenderTransformOrigin="0.371,0.498"/>
@@ -16,6 +20,8 @@
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
         <Label Content="Total Charge after adding &#xD;&#xA;delivery fee ($25)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,195,0,0"/>
         <TextBlock x:Name="totalChargeTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="198,218,0,0"/>
+        <TextBlock x:Name="totalChargeWrapTextBox" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="193,263,250.4,0" Height="21"/>
+        <Label Content="Total Charge after adding &#xA; the wrap charge ($5)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,242,0,0"/>
 
 
     </Grid>
